@@ -1,0 +1,26 @@
+[
+  {
+    "titlePrefix": "Meerut",
+    "description": "Annual technology conference for developers",
+    "city": "Hyderabad",
+    "venue": "HICC Convention Center",
+    "dateTime": "2027-06-15T10:00",
+    "price": "1500",
+    "totalSeats": "100",
+    "fullName": "AAKANKSHA THAKUR",
+    "email": "AAKANKSHA.THAKUR@example.com",
+    "phone": "9876543210"
+  },
+  {
+    "titlePrefix": "AI Sumit Meerut",
+    "description": "Future of AI and ML",
+    "city": "Bangalore",
+    "venue": "BIEC",
+    "dateTime": "2027-08-20T09:30",
+    "price": "2000",
+    "totalSeats": "500",
+    "fullName": "Priya Sharma",
+    "email": "priya@example.com",
+    "phone": "9123456780"
+  }
+]
