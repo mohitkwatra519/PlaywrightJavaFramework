@@ -82,10 +82,10 @@
 
         <!-- ================= PURCHASE ================= -->
         <profile>
-            <id>Purchase</id>
+            <id>Smoke</id>
 
             <properties>
-                <suiteXmlFile>purchaseTest.xml</suiteXmlFile>
+                <suiteXmlFile>testng_smoke.xml</suiteXmlFile>
             </properties>
 
             <build>

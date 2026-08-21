@@ -20,7 +20,9 @@ public class TestBase1 {
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream("C:\\Users\\mohit\\IdeaProjects\\PlaywrightFramework\\src\\test\\resources\\config.properties");
         prop.load(fis);
-        String browserName = prop.getProperty("browser");
+        String browserName = System.getProperty("browser")!=null ? System.getProperty("browser")
+                : prop.getProperty("browser");
+        //String browserName = prop.getProperty("browser");
 
         playwright = Playwright.create();
 
