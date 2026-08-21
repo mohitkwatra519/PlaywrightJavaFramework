@@ -18,7 +18,9 @@ public class TestBase1 {
     @BeforeMethod
     public void setup () throws IOException {
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("C:\\Users\\mohit\\IdeaProjects\\PlaywrightFramework\\src\\test\\resources\\config.properties");
+        //FileInputStream fis = new FileInputStream("C:\\Users\\mohit\\IdeaProjects\\PlaywrightFramework\\src\\test\\resources\\config.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties");
+
         prop.load(fis);
         String browserName = System.getProperty("browser")!=null ? System.getProperty("browser")
                 : prop.getProperty("browser");
