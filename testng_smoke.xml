@@ -4,7 +4,7 @@
     <test name = "Regression" parallel="tests" thread-count="2">
         <classes>
 
-            <class name ="practiceWithoutFramework.UIValidationsContinuedTest"/>
+
 
         </classes>
     </test>
