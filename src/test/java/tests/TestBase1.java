@@ -27,7 +27,8 @@ public class TestBase1 {
         playwright = Playwright.create();
 
         if (browserName.equals("chrome")){
-            browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+            browser = playwright.chromium().launch();
         }
         else if(browserName.equals("firefox")){
             browser = playwright.firefox().launch();
