@@ -33,7 +33,7 @@ public class TestBase1 {
             //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
             //browser = playwright.chromium().launch();
             browser = playwright.chromium().launch(
-                    new BrowserType.LaunchOptions().setHeadless(false)
+                    new BrowserType.LaunchOptions().setHeadless(true)
             );
         }
         else if(browserName.equals("firefox")){
