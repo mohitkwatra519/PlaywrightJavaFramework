@@ -24,6 +24,7 @@ public class TestBase1 {
         prop.load(fis);
         String browserName = System.getProperty("browser")!=null ? System.getProperty("browser")
                 : prop.getProperty("browser");
+        String envName = System.getProperty("env")!=null ?System.getProperty("env") :prop.getProperty("env");
         //String browserName = prop.getProperty("browser");
 
         playwright = Playwright.create();
@@ -32,7 +33,7 @@ public class TestBase1 {
             //browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
             //browser = playwright.chromium().launch();
             browser = playwright.chromium().launch(
-                    new BrowserType.LaunchOptions().setHeadless(true)
+                    new BrowserType.LaunchOptions().setHeadless(false)
             );
         }
         else if(browserName.equals("firefox")){
@@ -45,7 +46,8 @@ public class TestBase1 {
         //Browser browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
 
         page = browser.newPage();
-        base_url = prop.getProperty("qa.baseurl");
+        base_url = prop.getProperty(envName+".baseurl");
+       //base_url = prop.getProperty("qa.baseurl");
 
         PlaywrightAssertions.setDefaultAssertionTimeout(7000); // Global assertions for 7 seconds
         page.setDefaultTimeout(8000);
