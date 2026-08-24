@@ -56,3 +56,9 @@ jobs:
         with:
           name: allure-results
           path: target/allure-results
+      - name: Generate Allure Report
+        if: always()
+        uses: simple-elf/allure-report-action@v1.15
+        with:
+          allure_results: target/allure-results
+          allure_report: target/allure-report
