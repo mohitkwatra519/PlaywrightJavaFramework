@@ -1,4 +1,3 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","5","Create Event - book event and verify it is booked","Master Regression Suite","2026-08-24","skipped","2026-08-24","tests.FrameworkBuiltTest1","Regression","tests.FrameworkBuiltTest1","DemoTest"
-"","1","Create Event - book event and verify it is booked","Master Regression Suite","2026-08-24","skipped","2026-08-24","tests.FrameworkBuiltTest1","Regression","tests.FrameworkBuiltTest1","DemoTest"
-"","2","setup","Master Regression Suite","2026-08-24","broken","2026-08-24","tests.FrameworkBuiltTest1","Regression","tests.FrameworkBuiltTest1","setup"
+"","19164","Create Event - book event and verify it is booked","Master Regression Suite","2026-08-24","passed","2026-08-24","tests.FrameworkBuiltTest1","Regression","tests.FrameworkBuiltTest1","DemoTest"
+"","18909","Create Event - book event and verify it is booked","Master Regression Suite","2026-08-24","passed","2026-08-24","tests.FrameworkBuiltTest1","Regression","tests.FrameworkBuiltTest1","DemoTest"
